@@ -1,0 +1,6 @@
+/*.wasm
+  Content-Type: application/wasm
+  Content-Disposition: inline
+
+/*.pck
+  Content-Type: application/octet-stream
