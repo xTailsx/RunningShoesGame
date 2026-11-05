@@ -4,7 +4,6 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 		<title>Running Shoes</title>
-		<link rel="icon" type="image/png" href="./favicon.png?v=4">
 		<style>
 html, body, #canvas {
 	margin: 0;
@@ -48,20 +47,9 @@ body {
 }
 
 #status-splash {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: auto;
-    height: auto;
-    max-width: 90vw;
-    max-height: 85vh;
-    object-fit: contain;
-    display: block;
-}
-
-#status-splash.show-image--false {
-    display: none;
+	max-height: 100%;
+	max-width: 100%;
+	margin: auto;
 }
 
 #status-splash.show-image--false {
@@ -114,14 +102,14 @@ body {
 		</noscript>
 
 		<div id="status">
-			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="thgame.png" alt="">
+			<img id="status-splash" class="show-image--true fullsize--false use-filter--true" src="thgame.png" alt="">
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
 
 		<script src="thgame.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"thgame","experimentalVK":false,"fileSizes":{"thgame.pck":80366772,"thgame.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"thgame","experimentalVK":false,"fileSizes":{"thgame.pck":80366836,"thgame.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
